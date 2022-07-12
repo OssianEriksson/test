@@ -3,5 +3,5 @@ version: "3.9"
 services:
   test:
     image: alpine
-    command: sleep 10000
+    command: ['/bin/sh', '-c', 'date && sleep 100000']
     
