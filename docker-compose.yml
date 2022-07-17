@@ -4,4 +4,7 @@ services:
   test:
     image: alpine
     command: ['/bin/sh', '-c', 'date && sleep 100000']
-    
+    volumes:
+      - test:/root/test
+volumes:
+  test:    
